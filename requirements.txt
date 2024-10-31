@@ -1,0 +1,16 @@
+certifi==2021.5.30
+click==7.1.2
+colorama==0.4.5
+dataclasses==0.8
+Flask==1.1.4
+Flask-Script==2.0.6
+importlib-metadata==4.8.3
+itsdangerous==1.1.0
+Jinja2==2.11.3
+MarkupSafe==2.0.1
+typing_extensions==4.1.1
+Werkzeug==0.16.1
+wincertstore==0.2
+zipp==3.6.0
+Flask-SQLAlchemy==2.3.2
+PyMySQL==0.8.0
