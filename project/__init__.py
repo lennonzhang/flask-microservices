@@ -1,6 +1,5 @@
 from flask import Flask, jsonify
 import os
-#import sys
 import datetime
 from flask_sqlalchemy import SQLAlchemy
 
@@ -10,6 +9,16 @@ app_settings = os.getenv('APP_SETTINGS')
 app.config.from_object(app_settings)
 
 db = SQLAlchemy(app)
+
+def init_db(app):
+    app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
+        'connect_args': {
+            'charset': 'utf8mb4'
+        }
+    }
+    db.init_app(app)
+
+init_db(app)
 
 class User(db.Model):
     __tablename__ = "users"
