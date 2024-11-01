@@ -1,6 +1,9 @@
-from project import app
+from project import create_app
 from flask_testing import TestCase
 from flask import current_app
+
+app = create_app()
+
 
 class TestDevelopmentConfig(TestCase):
     def create_app(self):

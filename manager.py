@@ -1,7 +1,8 @@
-from project import app, db
+from project import create_app, db
 from flask_script import Manager
 import unittest
 
+app = create_app()
 manager = Manager(app)
 
 
