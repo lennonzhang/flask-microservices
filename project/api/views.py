@@ -43,5 +43,3 @@ def add_user():
             'status': 'fail',
             'message': 'Invalid payload.'
         }), 400
-
-
